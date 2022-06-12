@@ -6,7 +6,7 @@ function Form() {
   const [password, setPassword] = useState("");
   const registerUser = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/register", {
+    fetch("https://my-mern-login.herokuapp.com/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

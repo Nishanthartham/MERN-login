@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 function Dashboard() {
   const changeQuote = () => {
     //to get the exisiting quote from db
-    fetch("http://localhost:5000/quote", {
+    fetch("https://my-mern-login.herokuapp.com/quote", {
       headers: {
         "x-access-token": localStorage.getItem("token"),
       },
