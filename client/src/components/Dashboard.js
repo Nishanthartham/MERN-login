@@ -27,7 +27,7 @@ function Dashboard() {
 
   const updateQuote = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5000/quote", {
+    fetch("https://my-mern-login.herokuapp.com/quote", {
       method: "POST",
       headers: {
         "x-access-token": localStorage.getItem("token"),
